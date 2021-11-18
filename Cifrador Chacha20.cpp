@@ -16,7 +16,7 @@ string texto;
 int main()
 {
 //Abrir archivo
-   ifstream archivo("C:\\Users\\Public\\chacha.txt");
+   ifstream archivo("Ruta del archivo");
     if (archivo.fail()) {
         cout << "Error al abrir este archivo" << endl;
         return -1;
@@ -49,8 +49,8 @@ int main()
             buffer << std::setfill('0') << std::setw(2) << std::hex << int(ciphertext[i]);	
     }
 
-    //Escribimos información en el archivo
-    ofstream archivo2("C:\\Users\\Public\\chacha.txt");
+    //Escribir información en el archivo
+    ofstream archivo2("Ruta del archivo");
     if (archivo2.fail()) {
         cout << "Error archivo no encontrado" << endl;
     }
